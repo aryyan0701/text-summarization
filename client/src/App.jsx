@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import axios from 'axios';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [inputText, setInputText] = useState('');
+  const [summaryText, setSummaryText] = useState('');
+  const [error, setError] = useState('');
+
+  const handleInputChange = (event) => {
+    setInputText(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3001/summarize', { text: inputText });
+      setSummaryText(response.data.summaryText);
+      setError('');
+    } catch (error) {
+      console.error('Error summarizing text:', error.message);
+      setError('An error occurred while summarizing the text.');
+      setSummaryText('');
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>Text Summarizer</h1>
+      <form onSubmit={handleSubmit}>
+        <textarea
+          value={inputText}
+          onChange={handleInputChange}
+          placeholder="Enter your text here"
+        />
+        <button type="submit">Summarize</button>
+      </form>
+      {error && <p>Error: {error}</p>}
+      <h2>Summary:</h2>
+      <p>{summaryText}</p>
+    </div>
+  );
 }
 
-export default App
+export default App;
