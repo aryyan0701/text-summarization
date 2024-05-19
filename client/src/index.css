@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.modal {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-800 p-6 rounded-lg shadow-lg outline-none w-[26rem] lg:w-[40rem] max-h-screen overflow-y-auto pt-5;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-gray-800 bg-opacity-50;
+}
