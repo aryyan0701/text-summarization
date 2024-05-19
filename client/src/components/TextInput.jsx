@@ -10,7 +10,7 @@ function TextInput() {
   const handleSummarize = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:5000/summarize', { text });
+      const response = await axios.post('https://text-summarization-np8h.onrender.com/summarize', { text });
       setSentences(response.data.sentences);
     } catch (error) {
       console.error('Error summarizing text:', error);
