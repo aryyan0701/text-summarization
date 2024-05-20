@@ -43,12 +43,12 @@ function Navbar() {
           <h1 className="text-4xl font-bold text-white  mb-6">About Briefify</h1>
           
           <p className="text-xl mb-4 text-white text-start">
-            Welcome to Briefify, your go-to solution for effortless text summarization. Our application leverages the power of AI to provide concise and accurate summaries, helping you save time and understand the core ideas of any lengthy text.
+            Welcome to Briefify, your go-to solution for effortless text summarization. This application leverages the power of AI to provide concise and accurate summaries, helping you save time and understand the core ideas of any lengthy text.
           </p>
           
           <h2 className="text-3xl font-semibold text-white mb-4">Features</h2>
           <ul className="list-disc pl-6 mb-6">
-            <li>AI-Powered Summarization: Our application uses advanced AI technology to generate precise summaries.</li>
+            <li>AI-Powered Summarization: This application uses advanced AI technology to generate precise summaries.</li>
             <li>Bullet Point Summaries: Get your summaries in easy-to-read bullet points.</li>
             <li>Responsive Design: Accessible on any device, whether you’re using a desktop, tablet, or smartphone.</li>
             <li>User-Friendly Interface: Simple and intuitive design for a seamless user experience.</li>

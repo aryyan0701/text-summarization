@@ -8,7 +8,7 @@ function Footer() {
         <div className="flex flex-col items-center lg:items-start mb-4 lg:mb-0">
           <h1 className="text-3xl font-semibold mb-2">Briefify</h1>
           <p className="text-center lg:text-left max-w-2xl">
-            Briefify is your go-to solution for effortless text summarization. Our application leverages the power of AI to provide concise and accurate summaries, helping you save time and understand the core ideas of any lengthy text.
+            Briefify is your go-to solution for effortless text summarization. This application leverages the power of AI to provide concise and accurate summaries, helping you save time and understand the core ideas of any lengthy text.
           </p>
         </div>
         <div className="flex flex-col lg:flex-col items-center lg:items-start mt-10">
