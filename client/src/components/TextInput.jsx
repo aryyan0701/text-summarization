@@ -52,7 +52,7 @@ function TextInput() {
       {sentences.length > 0 && (
         <>
           <h2 className="text-xl font-semibold mb-4 text-white">Summary:</h2>
-          <div className="w-full lg:w-[40rem] bg-neutral-700 p-4 rounded-lg shadow-lg">
+          <div className="w-full lg:w-[40rem] bg-zinc-900 p-4 rounded-lg shadow-lg">
             {sentences.map((sentence, index) => (
               <p key={index} className="mb-2">{sentence}</p>
             ))}
