@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .modal {
-  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-800 p-6 rounded-lg shadow-lg outline-none w-[24rem] lg:w-[40rem] max-h-[40rem] overflow-y-auto pt-5;
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-zinc-900 p-6 rounded-lg shadow-lg outline-none w-[24rem] lg:w-[40rem] max-h-[40rem] overflow-y-auto pt-5;
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 

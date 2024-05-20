@@ -39,7 +39,7 @@ function Navbar() {
         overlayClassName="overlay"
       >
         <button onClick={closeModal} className="absolute top-2 right-4 text-3xl text-white">&times;</button>
-        <div className="flex flex-col text-start justify-center bg-slate-800 text-neutral-400 p-6">
+        <div className="flex flex-col text-start justify-center bg-zinc-900 text-neutral-400 p-6">
           <h1 className="text-4xl font-bold text-white  mb-6">About Briefify</h1>
           
           <p className="text-xl mb-4 text-white text-start">
