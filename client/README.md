@@ -92,7 +92,7 @@ To get started with the project, follow these steps:
    ```
 5. Start the development server:
    ```
-  npm run dev 
+   npm run dev
    ```
 
 ## Usage
