@@ -88,7 +88,7 @@ To get started with the project, follow these steps:
    ```
 4. Start the development server:
    ```
-   REACT_APP_BACKEND_URL=https://text-summarization-np8h.onrender.com
+   REACT_APP_BACKEND_URL=Your_live_backend_url
    ```
 5. Start the development server:
    ```
