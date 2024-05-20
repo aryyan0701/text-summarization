@@ -22,23 +22,23 @@ function Navbar() {
     <>
       <div className="w-full h-[4rem] bg-zinc-900 text-white flex p-3 justify-between">
         <h1 className="flex items-center text-3xl font-semibold text-white">
-        Briefify
+          Briefify
         </h1>
         <h2
-          className=" flex items-center text-3xl font-semibold text-white mr-2 cursor-pointer"
+          className="flex items-center text-3xl font-semibold text-white mr-2 cursor-pointer"
           onClick={openModal}
         >
-        <span className="hidden md:inline">About</span> <FaQuestion className="text-2xl ml-1" />
+          <span className="hidden md:inline">About</span> <FaQuestion className="text-2xl ml-1" />
         </h2>
       </div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="About Modal"
-        className="modal"
+        className={`modal ${modalIsOpen ? 'modal-open' : 'modal-close'}`}
         overlayClassName="overlay"
       >
-       <button onClick={closeModal} className="absolute top-0 right-2 text-3xl text-white">&times;</button> 
+        <button onClick={closeModal} className="absolute top-2 right-4 text-3xl text-white">&times;</button>
         <div className="flex flex-col text-start justify-center bg-slate-800 text-neutral-400 p-6">
           <h1 className="text-4xl font-bold text-white  mb-6">About Briefify</h1>
           
@@ -65,11 +65,11 @@ function Navbar() {
 
           <h2 className="text-3xl font-semibold text-white mb-4">Connect with Me</h2>
           <div className="flex flex-row">
-          <span className="text-3xl mr-1"><a href="https://github.com/aryyan0701" className="text-blue-400 hover:underline"> <FaGithubSquare/></a></span>
-            <span className="text-3xl mr-1"><a href="https://twitter.com/aaryyan_" className="text-blue-400 hover:underline"> <FaSquareXTwitter/></a></span>
-            <span className="text-3xl mr-1"><a href="https://linkedin.com/in/aryan-kadam-568083204x`" className="text-blue-400 hover:underline"> <FaLinkedin/></a></span>
-            <span className="text-3xl mr-1"><a href="https://instagram.com/_aaaryaan__" className="text-blue-400 hover:underline"> <FaInstagramSquare/></a></span>
-            <span className="text-3xl "><a href="https://facebook.com/TextSummarizer" className="text-blue-400 hover:underline"> <IoLogoDiscord/></a></span>
+            <span className="text-3xl mr-1"><a href="https://github.com/aryyan0701" className="text-blue-400 hover:underline"><FaGithubSquare /></a></span>
+            <span className="text-3xl mr-1"><a href="https://twitter.com/aaryyan_" className="text-blue-400 hover:underline"><FaSquareXTwitter /></a></span>
+            <span className="text-3xl mr-1"><a href="https://linkedin.com/in/aryan-kadam-568083204x`" className="text-blue-400 hover:underline"><FaLinkedin /></a></span>
+            <span className="text-3xl mr-1"><a href="https://instagram.com/_aaaryaan__" className="text-blue-400 hover:underline"><FaInstagramSquare /></a></span>
+            <span className="text-3xl"><a href="https://facebook.com/TextSummarizer" className="text-blue-400 hover:underline"><IoLogoDiscord /></a></span>
           </div>
         </div>
       </Modal>
