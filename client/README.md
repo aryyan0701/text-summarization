@@ -19,35 +19,6 @@ Welcome to Briefify! This application is designed to help users quickly and accu
 - **Render:**  Platform used for backend deployment, providing seamless deployment and hosting services.
 - **Vercel:** Platform used for deployment and hosting, providing a seamless deployment process and reliable hosting services.
 
-## Quick Start
-
-### Demo
-
-### Home Page
-![Home Page](./public/assets/home.png)
-
-### Search Page
-![Search Page](./public/assets/search.png)
-![Search Page](./public/assets/search_2.png)
-
-### About Page
-![About Page](./public/assets/about.png)
-
-### Responsive Design
-<div style="overflow: auto; white-space: nowrap;">
-  <a target="_blank" href="https://aryankadam.hashnode.dev/react-js-beginner-to-advanced">
-    <img target="_blank" src="./public/assets/home_res.png" alt="Blogs" style="width: 24%; display: inline-block; margin-right: 1%;">
-  </a>
-  <a target="_blank" href="https://aryankadam.hashnode.dev/react-js-beginner-to-advanced-series-2">
-    <img target="_blank" src="./public/assets/search_res.png" alt="Pages" style="width: 24%; display: inline-block; margin-right: 1%;">
-  </a>
-  <a target="_blank" href="https://aryankadam.hashnode.dev/react-js-beginner-to-advanced">
-    <img target="_blank" src="./public/assets/search_res_2.png" alt="Blogs" style="width: 24%; display: inline-block; margin-right: 1%;">
-  </a>
-  <a target="_blank" href="https://aryankadam.hashnode.dev/react-js-beginner-to-advanced-series-2">
-    <img target="_blank" src="./public/assets/about_res.png" alt="Pages" style="width: 24%; display: inline-block;">
-  </a>
-</div>
 
 ## Getting Started
 
